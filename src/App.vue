@@ -50,7 +50,7 @@
 @media screen and (max-width: 1280px) {
     .container {
         grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.3fr 2fr;
     }
 
     

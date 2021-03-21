@@ -96,6 +96,8 @@
         margin-left: 2rem;
         transition: 0.2s ease-in-out;
         cursor: pointer;
+        overflow-x: visible;
+        line-break: anywhere;
     }
 }
 

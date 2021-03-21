@@ -21,8 +21,8 @@
 
 <style lang="scss" scoped>
     #video {
-        width: 200px;
-        height: calc(200px * 9 / 16);
+        width: 13rem;
+        height: calc(13rem * 9 / 16);
         position: relative;
     }
 

@@ -39,6 +39,8 @@
     .side-component {
         grid-column: 2;
         grid-row: 2;
+        align-self: flex-start;
+        margin-top: 2rem;
     }
 }
 </style>
