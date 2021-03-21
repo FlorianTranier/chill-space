@@ -22,7 +22,7 @@
 <style lang="scss" scoped>
     #video {
         width: 200px;
-        height: 200px;
+        height: calc(200px * 9 / 16);
         position: relative;
     }
 
