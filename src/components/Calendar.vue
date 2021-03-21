@@ -40,13 +40,13 @@
 
 
             async function getTodayEvents() {
-                const file = await fetch(icsLink.value);
+                const file = await fetch('https://obscure-stream-04186.herokuapp.com/' + icsLink.value);
                 const events = await icsToJson(await file.text())
 
                 const today = new Date()
                 const year = today.getUTCFullYear()
                 const month = (today.getUTCMonth() + 1).toString().padStart(2, "0")
-                const day = (today.getDate() +4).toString().padStart(2, "0")
+                const day = today.getDate().toString().padStart(2, "0")
                 
                 const todayIcsString = `${year}${month}${day}`
 
