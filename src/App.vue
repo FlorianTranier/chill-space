@@ -31,8 +31,8 @@
     width: 100vw;
     height: 100vh;
     font-family: 'Redressed',cursive;
-    animation: bgAnimation 6s infinite linear alternate-reverse;
-    background: linear-gradient(90deg, var(--gradient1), var(--gradient2));
+    animation: bgAnimation 12s infinite linear alternate-reverse;
+    background: linear-gradient(45deg, var(--gradient1), var(--gradient2));
     background-size: 300% 100%;
 }
 
