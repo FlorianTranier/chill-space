@@ -1,9 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faMusic, faWindowRestore } from '@fortawesome/free-solid-svg-icons'
+import { faWindowRestore, faCog } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import InputColorPicker from 'vue-native-color-picker'
 
-library.add(faMusic, faWindowRestore)
+library.add(faWindowRestore, faCog)
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+createApp(App).use(InputColorPicker).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

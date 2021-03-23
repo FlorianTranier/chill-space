@@ -1,5 +1,5 @@
 <template>
-    <Video />
+    <Settings />
     <div class="container">
         <Date />
         <SideComponent />
@@ -9,7 +9,7 @@
 <script setup>
   import Date from './components/Date.vue'
   import SideComponent from './components/SideComponent.vue'
-  import Video from './components/Video.vue'
+  import Settings from './components/Settings.vue'
 </script>
 
 <style lang="scss">
@@ -26,11 +26,13 @@
 }
 
 #app {
+    --gradient1: grey;
+    --gradient2: black;
     width: 100vw;
     height: 100vh;
     font-family: 'Redressed',cursive;
-    animation: bgAnimation 4s infinite linear alternate;
-    background: linear-gradient(90deg, rgb(248, 40, 40), orange);
+    animation: bgAnimation 6s infinite linear alternate-reverse;
+    background: linear-gradient(90deg, var(--gradient1), var(--gradient2));
     background-size: 300% 100%;
 }
 
@@ -44,8 +46,8 @@
 }
 
 .hidden {
-        display: none;
-    }
+    display: none !important;
+}
 
 @media screen and (max-width: 1280px) {
     .container {
